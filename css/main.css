@@ -1,0 +1,135 @@
+/*@import url('./normalize.css');*/
+@import url("./vars.css");
+.container {
+  display: flex;
+  max-width: 100%;
+  margin: 10px auto;
+  background: var(--main-background);
+  font-size: var(--main-font-size);
+  color: #1d2a38;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left-section {
+  background: #2c4055;
+  color: #fff;
+  font-size: var(--main-font-size);
+  border-bottom: 2px solid #fff;
+  flex: 0 0 20%;
+  padding: 30px 20px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 30px 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+  object-fit: cover;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:visited {
+  color: #fff;
+}
+
+.link:active {
+  color: #d7e9ad;
+}
+
+.link:hover {
+  color: #d7e9ad;
+}
+
+.heading_3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.personal-info, .contact-info, .interest, .skills, .lang, .education, .experience {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.info {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.textbold {
+  font-weight: bold;
+}
+
+.section-title {
+  color: #2c4055;
+  border-bottom: 2px solid #2c4055;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.job {
+  margin-bottom: 25px;
+}
+
+.job-title, .specialty {
+  font-weight: bold;
+  color: #2c4055;
+}
+
+.company {
+  color: #888;
+  font-size: 0.95em;
+}
+
+.dates {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.menu {
+  list-style: square;
+}
+
+.skill {
+  margin-bottom: 1rem;
+  max-width: 400px;
+}
+
+.skill-name {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background: #e5e7eb;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 5px;
+}
+
+.skill-level {
+  background: linear-gradient(90deg, #727579, #1c1d20);
+  height: 100%;
+  width: 0;
+  border-radius: 9999px;
+  transition: width 2s ease;
+}/*# sourceMappingURL=main.css.map */
