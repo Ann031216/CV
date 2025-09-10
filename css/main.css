@@ -1,4 +1,4 @@
-/*@import url('./normalize.css');*/
+@charset "UTF-8";
 @import url("./vars.css");
 .container {
   display: flex;
@@ -56,12 +56,12 @@
   font-weight: bold;
 }
 
-.personal-info, .contact-info, .interest, .skills, .lang, .education, .experience {
+.personal_info, .contact-info, .interest, .skills, .lang, .education, .experience {
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -80,7 +80,7 @@
   border-bottom: 2px solid #2c4055;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -92,20 +92,23 @@
 .job-title, .specialty {
   font-weight: bold;
   color: #2c4055;
+  font-size: 1.1em;
 }
 
-.company {
+.company, .dates {
   color: #888;
-  font-size: 0.95em;
-}
-
-.dates {
-  font-size: 0.9em;
-  color: #888;
+  font-size: var(--main-font-size);
+  line-height: 0.5;
 }
 
 .menu {
   list-style: square;
+  padding-left: 0.5em;
+}
+
+.left-section .menu {
+  list-style-position: inside;
+  padding-left: 0;
 }
 
 .skill {
@@ -132,4 +135,69 @@
   width: 0;
   border-radius: 9999px;
   transition: width 2s ease;
+}
+
+/* ----- Адаптивність ----- */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .left-section {
+    flex: 0 0 25%;
+    padding: 20px 15px;
+    font-size: 0.95em;
+  }
+  .right-section {
+    flex: 1;
+    padding: 20px 15px;
+    font-size: 0.95em;
+  }
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+  .section-title,
+  .personal_info,
+  .contact-info,
+  .interest,
+  .skills,
+  .lang,
+  .education,
+  .experience {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 0.9em;
+  }
+  .left-section {
+    text-align: center;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .section-title,
+  .personal_info,
+  .contact-info,
+  .interest,
+  .skills,
+  .lang,
+  .education,
+  .experience {
+    font-size: 1em;
+  }
+  .job-title,
+  .specialty {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */
