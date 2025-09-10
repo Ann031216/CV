@@ -16,11 +16,11 @@
             border-bottom: 2px solid #fff;
             flex: 0 0 20%;
             padding: 30px 20px;
-        }
+}
 .right-section {
              flex: 1;
             padding: 30px 20px;
-        }
+}
 .profile-pic {
     width: 150px;      
     height: 150px;     
@@ -32,17 +32,23 @@
 .link {
             color: #fff;
             text-decoration: none;
- }
+}
  .link:visited {
             color: #fff;
-        }
-        .link:active {
+}
+.link:active {
             color: #d7e9ad;
-        }
+}
   .link:hover {
     color: #d7e9ad;
         }
-
+.contact-info a[href^="tel"] {
+  color: #fff;            
+  text-decoration: none;  
+}
+.contact-info a[href^="tel"]:hover {
+  color: #d7e9ad;         
+}
 .heading_3{
     font-size: 1.2em;
     font-weight: bold;
@@ -56,14 +62,15 @@
             font-size: 1.3em;
             letter-spacing: 1px;
             font-weight: bold;
-        }
+}
 .info {
             margin-bottom: 0px;
             margin-top: 0px;
-        }
+}
 .textbold {
-            font-weight: bold
-        }
+            font-weight: bold;
+            color: #fff;
+}
 .section-title{
             color: #2c4055;
             border-bottom: 2px solid #2c4055;

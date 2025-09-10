@@ -51,6 +51,15 @@
   color: #d7e9ad;
 }
 
+.contact-info a[href^=tel] {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a[href^=tel]:hover {
+  color: #d7e9ad;
+}
+
 .heading_3 {
   font-size: 1.2em;
   font-weight: bold;
@@ -73,6 +82,7 @@
 
 .textbold {
   font-weight: bold;
+  color: #fff;
 }
 
 .section-title {
